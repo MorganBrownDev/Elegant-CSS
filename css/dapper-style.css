@@ -1,0 +1,50 @@
+/* Browser CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ==| Here is the base file/foundation for Dapper CSS |== */
+
+
+/* ==| Content containers, sections and split container/section blocks |== */
+
+/* Containers */
+.container {
+    width: 100%;
+    height: auto;
+}
+
+/* Containers Max Width */
+.container-1000 {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+.container-1280 {
+    width: 100%;
+    max-width: 1280px;
+    height: auto;
+}
+
+/* ==| Content spacing covering percentages and pixel based spacing |== */
+
+/* Spacing Pixels */
+.padding-100 {
+    padding: 100px;
+}
+
+.padding-150 {
+    padding: 150px;
+}
+
+/* Spacing Percentages */
+.padding-25per {
+    padding: 100px;
+}
+
+.padding-50per {
+    padding: 100px;
+}
