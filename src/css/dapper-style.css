@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+/* Dapper CSS Font Choices */
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+  
 /* ==| Here is the base file/foundation for Dapper CSS |== */
 
 
@@ -64,6 +68,14 @@
 /* ==| Alignment |== */
 
 /* text alignment */
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
 .t-center {
     text-align: center;
 }
