@@ -48,3 +48,22 @@
 .padding-50per {
     padding: 100px;
 }
+
+/* ==| Typography |== */
+
+/* Headings */
+.m-heading {
+    font-size: 3rem;
+}
+
+.s-heading {
+    font-size: 2rem;
+}
+
+
+/* ==| Alignment |== */
+
+/* text alignment */
+.t-center {
+    text-align: center;
+}
