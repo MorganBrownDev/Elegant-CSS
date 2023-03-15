@@ -1,0 +1,108 @@
+/* Elegant Library Styling */
+@import url('elegant.css');
+
+/* Website Typograhpy */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/* Website Styling */
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-heading {
+    font-weight: 400;
+}
+
+.s-heading {
+    font-weight: 300;
+}
+
+
+/* Website Landing Loader Elements */
+
+.page-loader {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    z-index: 1000;
+    animation: pageLoaded 6s ease-in-out 0s 1 normal both;
+}
+
+.loader {
+    width: 25%;
+    height: 25%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: solid white 1px;
+    color: white;
+    animation: pageLoader 5s ease-in-out 0s 1 normal both;
+}
+
+.loader p {
+    position: absolute;
+    width: 600px;
+    font-size: 3rem;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/* Website CSS Animations */
+
+@keyframes pageLoader {
+	0% {
+		width: 0%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+	}
+    50% {
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+    95% {
+        width: 25%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+	100% {
+        width: 25%;
+        background-color: rgba(0, 0, 0, 0);
+	}
+}
+
+@keyframes pageLoaded {
+	0% {
+		background-color: rgb(0, 0, 0);
+        visibility: visible;
+	}
+	85% {
+		background-color: rgb(0, 0, 0);
+	}
+	100% {
+		background-color: rgba(0, 0, 0, 0);
+        z-index: -10;
+        visibility: hidden;
+	}
+}
