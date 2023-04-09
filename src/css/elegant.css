@@ -5,8 +5,19 @@
     box-sizing: border-box;
 }
 
+button {
+    background: transparent;
+    border: none;
+    border-radius: none;
+}
+
 /* ==| Here is the base file/foundation for Dapper CSS |== */
 
+/* Images */
+.f-img {
+    display: block;
+    max-width: 100%;
+}
 
 /* ==| Content containers, sections and split container/section blocks |== */
 
@@ -32,26 +43,46 @@
 /* ==| Content spacing covering percentages and pixel based spacing |== */
 
 /* Spacing Pixels */
-.padding-100 {
+.p-100 {
     padding: 100px;
 }
 
-.padding-150 {
+.p-150 {
     padding: 150px;
 }
 
 /* Spacing Percentages */
-.padding-25per {
-    padding: 100px;
+.p-25per {
+    padding: 25%;
 }
 
-.padding-50per {
-    padding: 100px;
+.p-20per {
+    padding: 20%;
+}
+
+.p-10per {
+    padding: 10%;
+}
+
+.p-5per {
+    padding: 5%;
 }
 
 /* ==| Typography |== */
 
 /* Headings */
+.xxl-heading {
+    font-size: 6rem;
+}
+
+.xl-heading {
+    font-size: 5rem;
+}
+
+.l-heading {
+    font-size: 4rem;
+}
+
 .m-heading {
     font-size: 3rem;
 }
@@ -60,8 +91,31 @@
     font-size: 2rem;
 }
 
+.xs-heading {
+    font-size: 1rem;
+}
+
+.xxs-heading {
+    font-size: 0.8rem;
+}
+
 
 /* ==| Alignment |== */
+
+/* display alignment */
+.f-rc {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-cc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
 /* text alignment */
 .t-left {
@@ -74,4 +128,69 @@
 
 .t-center {
     text-align: center;
+}
+
+
+/* ==| Components |== */
+
+/* Cards */
+.base-card {
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+    background-color: rgb(253, 253, 253);
+}
+
+.b-shadow-card {
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.747);
+}
+
+.b-outline-card {
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+
+.b-radius-card {
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.747);
+}
+
+/* Buttons */
+.btn-1 {
+    width: auto;
+    min-width: 200px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: 0px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.747);
+    transition: 0.5s linear;
+}
+
+.btn-2 {
+    width: auto;
+    min-width: 200px;
+    height: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    border: 0px;
+    border: 2px solid black;
+    transition: 0.5s linear;
 }
